@@ -1,0 +1,80 @@
+
+[
+    {
+       "id":1,
+       "nombre":"pantalon candela",
+       "precio":3500
+    },
+    {
+       "id":2,
+       "nombre":"bombachon pia",
+       "precio":3000
+    },
+    {
+       "id":3,
+       "nombre":"sweater paloma",
+       "precio":4500
+    },
+    {
+       "id":4,
+       "nombre":"body flor",
+       "precio":4000
+    },
+    {
+       "id":5,
+       "nombre":"enterito filipa",
+       "precio":4500
+    },
+    {
+       "id":6,
+       "nombre":"sweater pia",
+       "precio":5000
+    },
+    {
+       "id":7,
+       "nombre":"sweater luisi",
+       "precio":5500
+    },
+    {
+       "id":8,
+       "nombre":"remera olivia",
+       "precio":3000
+    },
+    {
+       "id":9,
+       "nombre":"sweater filipa",
+       "precio":4800
+    },
+    {
+       "id":10,
+       "nombre":"pantalon filipa",
+       "precio":3800
+    },
+    {
+       "id":11,
+       "nombre":"enterito candela",
+       "precio":4700
+    },
+    {
+       "id":12,
+       "nombre":"short franca",
+       "precio":4000
+    },
+    {
+       "id":13,
+       "nombre":"set franca",
+       "precio":10000
+    },
+    {
+       "id":14,
+       "nombre":"set pia",
+       "precio":9800
+    },
+    {
+       "id":15,
+       "nombre":"set marga",
+       "precio":11200
+    }
+ ]
+            
+            

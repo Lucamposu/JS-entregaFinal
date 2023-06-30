@@ -493,6 +493,44 @@ th, td {
     text-transform: uppercase;
   }
 
+  .btn-disminuir{
+    background-color: #e8e2da;
+    color: #cdad91;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .btn-disminuir:hover{
+    background-color: #cdad91;
+    color: #e8e2da;
+  }
+
+  .btn-disminuir:active{
+    background-color: #876b5a;
+  }
+
+  .btn-aumentar{
+    background-color: #e8e2da;
+    color: #cdad91;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .btn-aumentar:hover{
+    background-color: #cdad91;
+    color: #e8e2da;
+  }
+
+  .btn-aumentar:active{
+    background-color: #876b5a;
+  }
+
+  
+
   .seguirComprando a {
     display: inline-block;
     margin-right: 10px;
