@@ -2,6 +2,8 @@
 const inputBuscar = document.querySelector("#buscar");
 const articulosBuscar = document.querySelectorAll(".articulo");
 
+
+
 inputBuscar.addEventListener("keyup", e=> {
     articulosBuscar.forEach(producto => {
   
