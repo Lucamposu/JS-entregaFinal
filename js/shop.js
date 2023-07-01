@@ -5,12 +5,6 @@ const paragraph = document.getElementById("total");
 const finalizarBoton = document.querySelector(".finalizarBoton");
 
 
-const fetchApi= async ()=>{
-
-    const response= await fetch('./data/db.json');
-    const data= await response.json()
-    
-  }
 
 carrito.forEach((element) => {
 
@@ -85,7 +79,6 @@ function guardarCarritoEnLocalStorage() {
 
 
 
-
 //funcion para calcular el precio total
 function totalCarrito(carrito) {
 
@@ -121,30 +114,37 @@ function actualizarCarritoHTML() {
 
     carritoContainer.innerHTML = carritoHTML;
     
-    carritoContainer.addEventListener("click", (event) => {
-
-        if (event.target.classList.contains("btn-disminuir")) {
-            disminuirCantidad(event);
-        } else if (event.target.classList.contains("btn-aumentar")) {
-            aumentarCantidad(event);
-        }
-
-    });
-
     paragraph.textContent = totalCarrito(carritoItems);
 }
 
+carritoContainer.addEventListener("click", (event) => {
+
+    if (event.target.classList.contains("btn-disminuir")) {
+        disminuirCantidad(event);
+    } else if (event.target.classList.contains("btn-aumentar")) {
+        aumentarCantidad(event);
+    }
+
+});
+
 //funcion para aumentar la cantidad de productos desde el carrito
 function disminuirCantidad(event) {
-
     const index = event.target.dataset.index;
-
+  
     if (carritoItems[index].cantidad > 1) {
-        carritoItems[index].cantidad--;
-        guardarCarritoEnLocalStorage();
-        actualizarCarritoHTML();
+      carritoItems[index].cantidad--;
+      guardarCarritoEnLocalStorage();
+      actualizarCarritoHTML();
+    } else {
+      carritoItems.splice(index, 1);
+      guardarCarritoEnLocalStorage();
+      actualizarCarritoHTML();
+  
+      if (carritoItems.length === 0) {
+        localStorage.removeItem("carrito");
+      }
     }
-}
+  }
 
 //funcion para aumentar la cantidad de productos desde el carrito
 function aumentarCantidad(event) {
@@ -192,8 +192,6 @@ function limpiarCarrito() {
 
 function init() {
     actualizarCarritoHTML();
-
-    botonComprar.addEventListener("click", agregarCarrito);
     finalizarBoton.addEventListener("click", limpiarCarrito);
 }
 

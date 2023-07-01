@@ -1,4 +1,4 @@
-//menu hamburguesa
+//menu responsive
 const iconoMenu = document.querySelector(".menuHome");
 const menu = document.querySelector("#menu");
 
